@@ -1,7 +1,7 @@
 # robosys2023_ros2_ws
 このリポジトリは2023年4sのロボットシステム学の授業の課題で作成したROS 2のパッケージです。
 
-[![test](https://github.com/yunosukekameoka/robosys2023_ros2_ws/actions/workflows/test.yml/badge.svg)](https://github.com/yunosukekameoka/robosys2023_ros2_ws/actions/workflows/test.yml)
+[![test](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml)
 
 ## 機能
 * talkerとlistenerの二つのノードがあり、機能はそれぞれ次のようになる。
@@ -53,7 +53,7 @@ $ ros2 run mypkg listener
 ・・・
 ```
 
-### ２つを同じ端末上で実行
+### ２つを同じ端末上で同時に実行
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 [INFO] [launch]: All log files can be found below /home/"youer_name"/.ros/log/
