@@ -15,7 +15,7 @@
 ## インストール
 * ROS 2をまだインストールしていない場合は、[ROS 2の公式インストールガイド](https://docs.ros.org/en/iron/Installation.html)に従ってインストールしてください。
 
-* Ubuntuのターミナルに以下を入力してください。
+* Ubuntuのターミナルに以下を入力して実行ください。
 ```
 $ mkdir -p ros2_ws/src
 $ cd ~/ros2_ws/src/
