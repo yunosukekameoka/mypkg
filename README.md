@@ -19,12 +19,12 @@ $ git clone https://github.com/yunosukekameoka/robosys2023_ros2_ws.git
 ```
 
 ## 実行例
-* talker
+### talker
 ```
 $ ros2 run mypkg talker
 (何も表示されない)
 ```
-別端末でros2を使ってサブスクライブする
+* 別端末でros2を使ってサブスクライブする
 ```
 $ ros2 topic echo /countup
 data: 0
@@ -36,13 +36,13 @@ data: 2
 ・・・
 ```
 
-* listener
-  * listenerのみで実行した場合
+### listener
+* listenerのみで実行した場合
 ```
 $ ros2 run mypkg listener
 (何も表示されない)
 ```
-  * talkerを実行した状態で別端末でlistenerを実行した場合
+* talkerを実行した状態で別端末でlistenerを実行した場合
 ```
 端末１$ ros2 run mypkg talker　
 端末２$ ros2 run mypkg listener
@@ -53,7 +53,7 @@ $ ros2 run mypkg listener
 ・・・
 ```
 
-* ２つを同じ端末上で実行
+### ２つを同じ端末上で実行
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 [INFO] [launch]: All log files can be found below /home/"youer_name"/.ros/log/
