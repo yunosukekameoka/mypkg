@@ -5,9 +5,9 @@
 
 ## 機能
 * talkerとlistenerの二つのノードがあり、機能はそれぞれ次のようになる。
-###talker
+### talker
 * "talker"ノードは0.5秒定期に整数値を0から1ずつ増加させながら"countup"トピックにパブリッシュする
-###listener
+### listener
 * "listener"ノードは"countup"というトピックから整数メッセージを受信し、その内容をログに表示する
 
 ## インストール
