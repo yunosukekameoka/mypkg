@@ -4,11 +4,11 @@
 [![test](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml)
 
 ## 機能
-* talkerとlistenerの二つのノードとcountupというトピックがあり、機能はそれぞれ次のようになる。
+* talkerとlistenerの二つのノードとcountupというトピックがあり、機能はそれぞれ次のようになります。
 ### talker
-* "talker"ノードは0.5秒定期に整数値を0から1ずつ増加させながら"countup"トピックにパブリッシュする。メッセージの型は16ビット符号つき整数である
+* "talker"ノードは0.5秒定期に整数値を0から1ずつ増加させながら"countup"トピックにパブリッシュする。メッセージの型は16ビット符号つき整数です。
 ### listener
-* "listener"ノードは"countup"というトピックから整数メッセージを受信し、その内容をログに表示する
+* "listener"ノードは"countup"というトピックから整数メッセージを受信し、その内容をログに表示します。
 ### countup
 * 整数のメッセージをパブリッシュおよびサブスクライブするための通信チャネルを提供しています。
 
@@ -28,7 +28,7 @@ $ git clone https://github.com/yunosukekameoka/mypkg.git
 $ ros2 run mypkg talker
 (何も表示されない)
 ```
-* 別端末でros2を使ってサブスクライブする
+* 別端末でros2を使ってサブスクライブする。
 ```
 $ ros2 topic echo /countup
 data: 0
@@ -80,8 +80,8 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 ## 著作権、ライセンス
 
-  * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
-  * このパッケージのコードは，下記のスライド群（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
+  * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。
+  * このパッケージのコードは，下記のスライド群（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです。
       * [rhttps://ryuichiueda.github.io/my_slides/robosys_2022/lesson11.html#/6](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson11.html#/6)
       * [https://ryuichiueda.github.io/my_slides/robosys_2022/lesson10.html#/4](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson10.html#/4)
       * [https://ryuichiueda.github.io/my_slides/robosys_2022/lesson8.html#/22](https://ryuichiueda.github.io/my_slides/robosys_2022/lesson8.html#/22)
