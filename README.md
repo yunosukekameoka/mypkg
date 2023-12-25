@@ -6,7 +6,7 @@
 ## 機能
 * talkerとlistenerの二つのノードとcountupというトピックがあり、機能はそれぞれ次のようになる。
 ### talker
-* "talker"ノードは0.5秒定期に整数値を0から1ずつ増加させながら"countup"トピックにパブリッシュする
+* "talker"ノードは0.5秒定期に整数値を0から1ずつ増加させながら"countup"トピックにパブリッシュする。メッセージの型は16ビット符号つき整数である
 ### listener
 * "listener"ノードは"countup"というトピックから整数メッセージを受信し、その内容をログに表示する
 ### countup
@@ -19,7 +19,7 @@
 ```
 $ mkdir -p ros2_ws/src
 $ cd ~/ros2_ws/src/
-$ git clone https://github.com/yunosukekameoka/robosys2023_ros2_ws.git
+$ git clone https://github.com/yunosukekameoka/mypkg.git
 ```
 
 ## 実行例
@@ -72,10 +72,10 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## 必要なソフトウェア
 * ROS 2
 * Python
-  * テスト済み: 3.7～3.10
 
 ## テスト環境
-* Ubuntu 20.04.6 LTS
+* Ubuntu 22.04.6 LTS
+* ROS 2 humble
 
 
 ## 著作権、ライセンス
