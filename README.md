@@ -4,17 +4,21 @@
 [![test](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml)
 
 ## 機能
-* talkerとlistenerの二つのノードがあり、機能はそれぞれ次のようになる。
+* talkerとlistenerの二つのノードとcountupというトピックがあり、機能はそれぞれ次のようになる。
 ### talker
 * "talker"ノードは0.5秒定期に整数値を0から1ずつ増加させながら"countup"トピックにパブリッシュする
 ### listener
 * "listener"ノードは"countup"というトピックから整数メッセージを受信し、その内容をログに表示する
+### countup
+* 整数のメッセージ（std_msgs.msg.Int16型）をパブリッシュおよびサブスクライブするための通信チャネルを提供しています。
 
 ## インストール
-* ROS 2をダウンロードがされていない場合は以下を入力し実行して下さい。
+* ROS 2をまだインストールしていない場合は、[ROS 2の公式インストールガイド](https://docs.ros.org/en/galactic/Installation.html)に従ってインストールしてください。
 
-Ubuntuのターミナルに以下を入力してください。
+* Ubuntuのターミナルに以下を入力してください。
 ```
+$ mkdir -p ros2_ws/src
+$ cd ~/ros2_ws/src/
 $ git clone https://github.com/yunosukekameoka/robosys2023_ros2_ws.git
 ```
 
