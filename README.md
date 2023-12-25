@@ -1,4 +1,4 @@
-# robosys2023_ros2_ws
+# mypkg
 このリポジトリは2023年4sのロボットシステム学の授業の課題で作成したROS 2のパッケージです。
 
 [![test](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/yunosukekameoka/mypkg/actions/workflows/test.yml)
