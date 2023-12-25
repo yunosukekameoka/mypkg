@@ -13,7 +13,7 @@
 * 整数のメッセージ（std_msgs.msg.Int16型）をパブリッシュおよびサブスクライブするための通信チャネルを提供しています。
 
 ## インストール
-* ROS 2をまだインストールしていない場合は、[ROS 2の公式インストールガイド](https://docs.ros.org/en/galactic/Installation.html)に従ってインストールしてください。
+* ROS 2をまだインストールしていない場合は、[ROS 2の公式インストールガイド](https://docs.ros.org/en/iron/Installation.html)に従ってインストールしてください。
 
 * Ubuntuのターミナルに以下を入力してください。
 ```
